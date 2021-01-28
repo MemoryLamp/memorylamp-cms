@@ -1,5 +1,3 @@
-import './App.css';
-
 import TranslationList from './pages/translations/TranslationList';
 
 function App() {

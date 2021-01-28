@@ -1,27 +1,26 @@
-function SimpleTable() {
-    return (
-        <>
+function SimpleTableHeading(props) {
+  return <th class="border px-4 py-2">{props.text}</th>;
+}
 
-            <table>
-                <tr>
-                    <th>
-                        Code
-                    </th>
-                    <th>
-                        Name
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        ESV
-                    </td>
-                    <td>
-                        English Standard Version
-                    </td>
-                </tr>
-            </table>
-        </>
-    );
+function SimpleTableData(props) {
+  return <td class="border px-4 py-2">{props.text}</td>;
+}
+
+function SimpleTable() {
+  return (
+    <>
+      <table class="">
+        <tr>
+          <SimpleTableHeading text="Code" />
+          <SimpleTableHeading text="Name" />
+        </tr>
+        <tr>
+          <SimpleTableData text="ESV" />
+          <SimpleTableData text="English Standard Version" />
+        </tr>
+      </table>
+    </>
+  );
 }
 
 export default SimpleTable;
