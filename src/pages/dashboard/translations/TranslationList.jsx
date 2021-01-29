@@ -1,8 +1,8 @@
-import SimpleTable from "../../components/tables/SimpleTable";
-import SimpleButton from "../../components/buttons/SimpleButton";
-import PageHeading from "../../components/text-headings/PageHeading";
+import SimpleTable from "../../../components/tables/SimpleTable";
+import SimpleButton from "../../../components/buttons/SimpleButton";
+import PageHeading from "../../../components/text-headings/PageHeading";
 
-function TranslationList() {
+export default function TranslationList() {
   return (
     <>
       <section className="container mx-auto">
@@ -17,5 +17,3 @@ function TranslationList() {
     </>
   );
 }
-
-export default TranslationList;

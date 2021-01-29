@@ -1,6 +1,11 @@
+import { useHistory } from "react-router-dom";
+
 function LoginPage() {
+  const history = useHistory();
+
   const handleSubmit = function () {
-    alert("batman!");
+    // TODO: Auth logic
+    history.push("/translations");
   };
 
   return (
